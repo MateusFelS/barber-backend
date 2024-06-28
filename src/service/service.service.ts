@@ -17,4 +17,10 @@ export class ServiceService{
             }
         });
     }
+
+    async createService(data: Service): Promise<Service>{
+        return this.prisma.service.create({
+            data
+        });
+    }
 }
