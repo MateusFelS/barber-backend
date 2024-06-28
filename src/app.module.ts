@@ -7,7 +7,7 @@ import { ServiceModule } from './service/service.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: 'mysql',
+      type: 'postgres',
       host: 'dpg-cpvagntumphs73c96j90-a',
       port: 5432,
       username: 'bd_barber_user',
